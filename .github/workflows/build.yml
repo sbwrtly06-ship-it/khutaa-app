@@ -1,10 +1,5 @@
 name: Build APK
 
-# Builds a debug APK automatically every time you push code to GitHub.
-# You do not need Android Studio or a computer to use this -- GitHub
-# runs the build on its own servers; you just download the finished
-# APK from the "Actions" tab afterwards.
-
 on:
   push:
     branches: [ main ]
@@ -22,8 +17,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Accept Android SDK licenses
+        run: yes | sdkmanager --licenses || true
+
+      - name: Install required SDK packages
+        run: sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v3
