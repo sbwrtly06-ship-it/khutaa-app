@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">المتفوق</string>
+    <string name="welcome_title">المتفوق</string>
+    <string name="welcome_subtitle">طريقك نحو التفوق يبدأ من هنا</string>
+    <string name="start_journey">ابدأ رحلتك الآن</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="create_account">إنشاء حساب جديد</string>
+    <string name="accessibility_service_description">تستخدم خُطى هذه الخدمة لاكتشاف فتح تطبيق من قائمة الالتزام أثناء جلسة تركيز نشطة، بدون الاطلاع على أي محتوى داخل التطبيقات الأخرى.</string>
+</resources>
